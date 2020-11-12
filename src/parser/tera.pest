@@ -139,8 +139,10 @@ test      = { dotted_ident ~ "is" ~ test_call }
 /// TERA
 
 // All the blocks that Tera recognises
-variable_start = { "{{-" | "{{" }
-variable_end   = { "-}}" | "}}" }
+// variable_start = { "{{-" | "{{" }
+// variable_end   = { "-}}" | "}}" }
+variable_start = { "{{-" }
+variable_end   = { "-}}" }
 // whitespace control
 tag_start      = { "{%-" | "{%" }
 tag_end        = { "-%}" | "%}" }
